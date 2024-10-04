@@ -65,7 +65,7 @@ const nav = () => {
         </div>
 
         {/* icons section  */}
-        <div className='flex gap-6 items-center'>
+        <div className='flex md:gap-6 gap-2 items-center'>
           {nav_items.map((item, index) => {
             return <Link to={item.link} className='text-white text-xl hover:text-[#E43A33] ' key={index}>{item.icon}</Link>
           })

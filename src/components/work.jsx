@@ -29,7 +29,7 @@ const work = () => {
 
       {/* Left Section */}
       <div className="animate__animated animate__fadeInDown">
-        <h1 className="text-4xl md:mb-4 lg:px-0 px-6">
+        <h1 className="text-4xl md:mb-4 lg:px-0 px-6 mt-12 md:mt-0">
           My <span className="text-red-600">Work</span>.
         </h1>
         <p className="text-sm text-white/70 lg:px-0 px-6">
