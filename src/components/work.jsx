@@ -23,13 +23,13 @@ const work = () => {
   ]
 
   return (
-    <div className="flex lg:flex-row flex-col  justify-center items-center min-h-screen w-screen gap-16   text-white bg-[#181532]">
+    <div className="flex lg:flex-row flex-col  justify-center items-center min-h-screen w-screen md:gap-16 gap-4   text-white bg-[#181532]">
 
       <Nav />
 
       {/* Left Section */}
-      <div className="service-left animate__animated animate__fadeInDown">
-        <h1 className="text-4xl mb-4">
+      <div className="animate__animated animate__fadeInDown">
+        <h1 className="text-4xl md:mb-4 md:mt-0 mt-16 ">
           My <span className="text-red-600">Work</span>.
         </h1>
         <p className="text-sm text-white/70">
