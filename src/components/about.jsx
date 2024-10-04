@@ -20,12 +20,12 @@ const about = () => {
     },
   ]
   return (
-    <div className="flex justify-center items-center min-h-screen gap-12 bg-[#181532]">
+    <div className="flex justify-center md:px-0 px-12 items-center min-h-screen gap-12 bg-[#181532]">
       <Nav />
 
       {/* profile-left */}
       <div className="flex flex-col gap-4">
-        <h1 className="text-white font-black text-4xl animate__animated animate__backInDown">
+        <h1 className="text-white font-black sm:text-4xl text-3xl animate__animated animate__backInDown">
           Captivating <span className="text-red-600">stories</span> <br />making cool frontend <br /> designs.
         </h1>
 
@@ -34,7 +34,7 @@ const about = () => {
         </p>
 
         {/* bottom left */}
-        <div className=" flex gap-8 text-white/70 font-medium mt-8 animate__animated animate__fadeInDown">
+        <div className=" flex md:gap-8 sm:gap-4 gap-2 text-white/70 font-medium mt-8 animate__animated animate__fadeInDown">
           {about.map((item, index) => {
             return <>
               <div className="text-center">

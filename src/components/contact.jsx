@@ -5,7 +5,7 @@ import Nav from './nav'
 const contact = () => {
   return (
     <div>
-      <section className="text-white relative bg-[#181532] h-[100vh] md:block flex justify-center">
+      <section className="text-white w-screen  relative bg-[#181532] h-[100vh] md:block flex justify-center">
 
         <Nav />
 
