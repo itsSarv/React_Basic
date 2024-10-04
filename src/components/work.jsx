@@ -29,10 +29,10 @@ const work = () => {
 
       {/* Left Section */}
       <div className="animate__animated animate__fadeInDown">
-        <h1 className="text-4xl md:mb-4 md:mt-0 mt-16 ">
+        <h1 className="text-4xl md:mb-4 lg:px-0 px-6">
           My <span className="text-red-600">Work</span>.
         </h1>
-        <p className="text-sm text-white/70">
+        <p className="text-sm text-white/70 lg:px-0 px-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum <br /> eius sapiente numquam a. Sed, odio est quidem officiis error, ex <br /> delectus eum repudiandae corporis quia cupiditate.
         </p>
       </div>
