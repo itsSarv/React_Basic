@@ -1,22 +1,24 @@
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/home'
+import About from './components/about'
+import Work from './components/work'
+import Contact from './components/contact'
+import Services from './components/services'
+import 'animate.css';
 
-import React, { useState } from 'react'
 
 const App = () => {
-
-  const [color, setcolor] = useState('black')
-
   return (
-    <>
-    <div className='min-h-screen w-full flex flex-col gap-8 justify-center items-center text-white' style={{backgroundColor: color}}>
-      <button onClick={()=>{setcolor("white")}} className='bg-green-300 px-6 py-3 hover:text-gray-500 rounded-full'>Click me to reset</button>
-      <h1 style={color=='white' ? {color: 'black'} : {color: 'white'}}>Select Background Color</h1>
-      <div className='buttons'>
-     { ["red", "green", "orange", "blue", "purple", "black", "pink", "crimson"].map((item, index) =>{
-       return <button onClick={()=>{setcolor(item)}} key={index} className= "text-white px-3 py-2 rounded-lg mx-3" style={{backgroundColor: item}}> {item} </button>
-      })}
-      </div>
-    </div>    
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/work' element={<Work />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
