@@ -57,7 +57,7 @@ const nav = () => {
   return (
     <>
       {/* top-navbar */}
-      <nav className='text-white flex justify-between py-6 fixed top-0 px-32 w-[100%] z-50'>
+      <nav className='text-white flex justify-between py-6 fixed top-0 lg:px-32 w-[100%] z-50 px-4'>
 
         {/* name section */}
         <div>
@@ -76,7 +76,7 @@ const nav = () => {
 
 
       {/* right-navicons */}
-      <div className='fixed right-[1%] top-[27%] flex flex-col w-fit bg-[#7b798c3e] rounded-full py-5 z-50'>
+      <div className='fixed md:right-[1%] md:bottom-[27%] bottom-5 flex md:flex-col w-fit my-auto bg-[#7b798c3e] rounded-full md:py-5 py-1 z-50'>
         {rightnav_items.map((item, index) => {
           return <Link to={item.link} key={index} className='text-white text-xl px-4 py-4 hover:text-[#E43A33;]'> {item.icon} </Link>
         })}
